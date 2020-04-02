@@ -180,10 +180,10 @@
 		1DDC0D602435C6A7002CDBF8 /* SMRLogScreen */ = {
 			isa = PBXGroup;
 			children = (
-				1DDC0D612435C6A7002CDBF8 /* SMRLogScreen.m */,
-				1DDC0D622435C6A7002CDBF8 /* SMRLogSideMenuView.m */,
 				1DDC0D632435C6A7002CDBF8 /* SMRLogScreen.h */,
+				1DDC0D612435C6A7002CDBF8 /* SMRLogScreen.m */,
 				1DDC0D642435C6A7002CDBF8 /* SMRLogSideMenuView.h */,
+				1DDC0D622435C6A7002CDBF8 /* SMRLogSideMenuView.m */,
 			);
 			path = SMRLogScreen;
 			sourceTree = "<group>";
