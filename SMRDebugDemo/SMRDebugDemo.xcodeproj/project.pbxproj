@@ -167,11 +167,11 @@
 			isa = PBXGroup;
 			children = (
 				1DDC0D5E2435C6A7002CDBF8 /* SMRDebuger.h */,
+				1DDC0D6A2435C6A7002CDBF8 /* SMRDebug.h */,
 				1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */,
 				1DDC0D602435C6A7002CDBF8 /* SMRLogScreen */,
 				1DDC0D652435C6A7002CDBF8 /* SMRLogSystem */,
 				1DDC0D682435C6A7002CDBF8 /* SQPrintJsonLog */,
-				1DDC0D6A2435C6A7002CDBF8 /* SMRDebug.h */,
 			);
 			name = SMRDebug;
 			path = ../SMRDebug;
