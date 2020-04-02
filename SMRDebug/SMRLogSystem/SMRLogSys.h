@@ -8,21 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#define SMRFunctionName          (SMRToString(@"%s", __PRETTY_FUNCTION__))
-#define SMRToString(a...)        ([NSString stringWithFormat:a])
-
-#define SMRLog0(desc, lbl) \
-({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc) fcName:SMRFunctionName label:lbl];}})
-#define SMRLog1(desc, arg1, lbl) \
-({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc, arg1) fcName:SMRFunctionName label:lbl];}})
-#define SMRLog2(desc, arg1, arg2, lbl) \
-({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc, arg1, arg2) fcName:SMRFunctionName label:lbl];}})
-#define SMRLog3(desc, arg1, arg2, arg3, lbl) \
-({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc, arg1, arg2, arg3) fcName:SMRFunctionName label:lbl];}})
-#define SMRLog4(desc, arg1, arg2, arg3, arg4, lbl) \
-({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc, arg1, arg2, arg3, arg4) fcName:SMRFunctionName label:lbl];}})
-#define SMRLog5(desc, arg1, arg2, arg3, arg4, arg5, lbl) \
-({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc, arg1, arg2, arg3, arg4, arg5) fcName:SMRFunctionName label:lbl];}})
+#define SMRLog0(desc, lbl)
+#define SMRLog1(desc, arg1, lbl)
+#define SMRLog2(desc, arg1, arg2, lbl)
+#define SMRLog3(desc, arg1, arg2, arg3, lbl)
+#define SMRLog4(desc, arg1, arg2, arg3, arg4, lbl)
+#define SMRLog5(desc, arg1, arg2, arg3, arg4, arg5, lbl)
 
 @interface SMRLogSys : NSObject
 

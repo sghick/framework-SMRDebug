@@ -10,7 +10,7 @@
 #define SMRDebuger_h
 
 #ifndef SMRDebugOn
-#define SMRDebugOn (1)
+#define SMRDebugOn (0)
 #endif
 
 #import "SMRDebug.h"

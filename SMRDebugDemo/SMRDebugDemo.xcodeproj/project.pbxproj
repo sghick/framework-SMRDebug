@@ -17,8 +17,6 @@
 		1DDC0D452435C60A002CDBF8 /* SMRDebugDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D442435C60A002CDBF8 /* SMRDebugDemoTests.m */; };
 		1DDC0D502435C60A002CDBF8 /* SMRDebugDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D4F2435C60A002CDBF8 /* SMRDebugDemoUITests.m */; };
 		1DDC0D6B2435C6A7002CDBF8 /* SMRDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */; };
-		1DDC0D6C2435C6A7002CDBF8 /* SMRLogScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D612435C6A7002CDBF8 /* SMRLogScreen.m */; };
-		1DDC0D6D2435C6A7002CDBF8 /* SMRLogSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D622435C6A7002CDBF8 /* SMRLogSideMenuView.m */; };
 		1DDC0D6E2435C6A7002CDBF8 /* SMRLogSys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D672435C6A7002CDBF8 /* SMRLogSys.m */; };
 		1DDC0D6F2435C6A7002CDBF8 /* SQPrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D692435C6A7002CDBF8 /* SQPrintJsonLog.m */; };
 		1DDC0D712435CC3E002CDBF8 /* SMRDebug.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1DDC0D702435CC3E002CDBF8 /* SMRDebug.podspec */; };
@@ -63,10 +61,6 @@
 		1DDC0D512435C60A002CDBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DDC0D5E2435C6A7002CDBF8 /* SMRDebuger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRDebuger.h; sourceTree = "<group>"; };
 		1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRDebug.m; sourceTree = "<group>"; };
-		1DDC0D612435C6A7002CDBF8 /* SMRLogScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogScreen.m; sourceTree = "<group>"; };
-		1DDC0D622435C6A7002CDBF8 /* SMRLogSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogSideMenuView.m; sourceTree = "<group>"; };
-		1DDC0D632435C6A7002CDBF8 /* SMRLogScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogScreen.h; sourceTree = "<group>"; };
-		1DDC0D642435C6A7002CDBF8 /* SMRLogSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogSideMenuView.h; sourceTree = "<group>"; };
 		1DDC0D662435C6A7002CDBF8 /* SMRLogSys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogSys.h; sourceTree = "<group>"; };
 		1DDC0D672435C6A7002CDBF8 /* SMRLogSys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogSys.m; sourceTree = "<group>"; };
 		1DDC0D692435C6A7002CDBF8 /* SQPrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPrintJsonLog.m; sourceTree = "<group>"; };
@@ -167,25 +161,13 @@
 			isa = PBXGroup;
 			children = (
 				1DDC0D5E2435C6A7002CDBF8 /* SMRDebuger.h */,
+				1DDC0D6A2435C6A7002CDBF8 /* SMRDebug.h */,
 				1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */,
-				1DDC0D602435C6A7002CDBF8 /* SMRLogScreen */,
 				1DDC0D652435C6A7002CDBF8 /* SMRLogSystem */,
 				1DDC0D682435C6A7002CDBF8 /* SQPrintJsonLog */,
-				1DDC0D6A2435C6A7002CDBF8 /* SMRDebug.h */,
 			);
 			name = SMRDebug;
 			path = ../SMRDebug;
-			sourceTree = "<group>";
-		};
-		1DDC0D602435C6A7002CDBF8 /* SMRLogScreen */ = {
-			isa = PBXGroup;
-			children = (
-				1DDC0D632435C6A7002CDBF8 /* SMRLogScreen.h */,
-				1DDC0D612435C6A7002CDBF8 /* SMRLogScreen.m */,
-				1DDC0D642435C6A7002CDBF8 /* SMRLogSideMenuView.h */,
-				1DDC0D622435C6A7002CDBF8 /* SMRLogSideMenuView.m */,
-			);
-			path = SMRLogScreen;
 			sourceTree = "<group>";
 		};
 		1DDC0D652435C6A7002CDBF8 /* SMRLogSystem */ = {
@@ -397,12 +379,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DDC0D6D2435C6A7002CDBF8 /* SMRLogSideMenuView.m in Sources */,
 				1DDC0D6E2435C6A7002CDBF8 /* SMRLogSys.m in Sources */,
 				1DDC0D302435C607002CDBF8 /* ViewController.m in Sources */,
 				1DDC0D2A2435C607002CDBF8 /* AppDelegate.m in Sources */,
 				1DDC0D6B2435C6A7002CDBF8 /* SMRDebug.m in Sources */,
-				1DDC0D6C2435C6A7002CDBF8 /* SMRLogScreen.m in Sources */,
 				1DDC0D3B2435C60A002CDBF8 /* main.m in Sources */,
 				1DDC0D6F2435C6A7002CDBF8 /* SQPrintJsonLog.m in Sources */,
 				1DDC0D2D2435C607002CDBF8 /* SceneDelegate.m in Sources */,

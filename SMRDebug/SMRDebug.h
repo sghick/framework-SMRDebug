@@ -36,10 +36,6 @@ typedef NS_ENUM(NSInteger, SMRDebugMode) {
 + (void)setDebug:(SMRDebugMode)debug;
 
 /**
- 生成令牌(旧版)
- */
-+ (NSString *)old_createCheckCodeWithKey:(NSString *)key date:(NSDate *)date __deprecated_msg("使用-createCheckCodeWithKey:rowKey:方法代替");
-/**
  生成令牌
  */
 + (NSString *)createCheckCodeWithKey:(NSString *)key date:(NSDate *)date;
