@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA6B5D3243C2E170065E268 /* SMRLogScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6B5D2243C2E170065E268 /* SMRLogScreen.m */; };
 		1DDC0D2A2435C607002CDBF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D292435C607002CDBF8 /* AppDelegate.m */; };
 		1DDC0D2D2435C607002CDBF8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D2C2435C607002CDBF8 /* SceneDelegate.m */; };
 		1DDC0D302435C607002CDBF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D2F2435C607002CDBF8 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DA6B5D1243C2E170065E268 /* SMRLogScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogScreen.h; sourceTree = "<group>"; };
+		1DA6B5D2243C2E170065E268 /* SMRLogScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogScreen.m; sourceTree = "<group>"; };
 		1DDC0D252435C607002CDBF8 /* SMRDebugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMRDebugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDC0D282435C607002CDBF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DDC0D292435C607002CDBF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DA6B5CA243C2AA60065E268 /* SMRLogScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1DA6B5D1243C2E170065E268 /* SMRLogScreen.h */,
+				1DA6B5D2243C2E170065E268 /* SMRLogScreen.m */,
+			);
+			path = SMRLogScreen;
+			sourceTree = "<group>";
+		};
 		1DDC0D1C2435C607002CDBF8 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 				1DDC0D6A2435C6A7002CDBF8 /* SMRDebug.h */,
 				1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */,
 				1DDC0D652435C6A7002CDBF8 /* SMRLogSystem */,
+				1DA6B5CA243C2AA60065E268 /* SMRLogScreen */,
 				1DDC0D682435C6A7002CDBF8 /* SQPrintJsonLog */,
 			);
 			name = SMRDebug;
@@ -384,6 +397,7 @@
 				1DDC0D2A2435C607002CDBF8 /* AppDelegate.m in Sources */,
 				1DDC0D6B2435C6A7002CDBF8 /* SMRDebug.m in Sources */,
 				1DDC0D3B2435C60A002CDBF8 /* main.m in Sources */,
+				1DA6B5D3243C2E170065E268 /* SMRLogScreen.m in Sources */,
 				1DDC0D6F2435C6A7002CDBF8 /* SQPrintJsonLog.m in Sources */,
 				1DDC0D2D2435C607002CDBF8 /* SceneDelegate.m in Sources */,
 			);
@@ -564,7 +578,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somrise.SMRDebugDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumrise.SMRDebugDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,7 +598,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somrise.SMRDebugDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumrise.SMRDebugDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
