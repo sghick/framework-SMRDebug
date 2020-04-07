@@ -19,7 +19,6 @@
 		1DDC0D502435C60A002CDBF8 /* SMRDebugDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D4F2435C60A002CDBF8 /* SMRDebugDemoUITests.m */; };
 		1DDC0D6B2435C6A7002CDBF8 /* SMRDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */; };
 		1DDC0D6E2435C6A7002CDBF8 /* SMRLogSys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D672435C6A7002CDBF8 /* SMRLogSys.m */; };
-		1DDC0D6F2435C6A7002CDBF8 /* SQPrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC0D692435C6A7002CDBF8 /* SQPrintJsonLog.m */; };
 		1DDC0D712435CC3E002CDBF8 /* SMRDebug.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1DDC0D702435CC3E002CDBF8 /* SMRDebug.podspec */; };
 		D02D4E5B779C9BFDD1CF309B /* Pods_SMRDebugDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70D4302E9090CF4ACC91CB0 /* Pods_SMRDebugDemo.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRDebug.m; sourceTree = "<group>"; };
 		1DDC0D662435C6A7002CDBF8 /* SMRLogSys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogSys.h; sourceTree = "<group>"; };
 		1DDC0D672435C6A7002CDBF8 /* SMRLogSys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogSys.m; sourceTree = "<group>"; };
-		1DDC0D692435C6A7002CDBF8 /* SQPrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPrintJsonLog.m; sourceTree = "<group>"; };
 		1DDC0D6A2435C6A7002CDBF8 /* SMRDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRDebug.h; sourceTree = "<group>"; };
 		1DDC0D702435CC3E002CDBF8 /* SMRDebug.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SMRDebug.podspec; path = ../SMRDebug.podspec; sourceTree = "<group>"; };
 		74F09BD1173AA5EA4C65CBA0 /* Pods-SMRDebugDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMRDebugDemo.debug.xcconfig"; path = "Target Support Files/Pods-SMRDebugDemo/Pods-SMRDebugDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				1DDC0D5F2435C6A7002CDBF8 /* SMRDebug.m */,
 				1DDC0D652435C6A7002CDBF8 /* SMRLogSystem */,
 				1DA6B5CA243C2AA60065E268 /* SMRLogScreen */,
-				1DDC0D682435C6A7002CDBF8 /* SQPrintJsonLog */,
 			);
 			name = SMRDebug;
 			path = ../SMRDebug;
@@ -190,14 +187,6 @@
 				1DDC0D672435C6A7002CDBF8 /* SMRLogSys.m */,
 			);
 			path = SMRLogSystem;
-			sourceTree = "<group>";
-		};
-		1DDC0D682435C6A7002CDBF8 /* SQPrintJsonLog */ = {
-			isa = PBXGroup;
-			children = (
-				1DDC0D692435C6A7002CDBF8 /* SQPrintJsonLog.m */,
-			);
-			path = SQPrintJsonLog;
 			sourceTree = "<group>";
 		};
 		774FC7C1BFF70DB275944337 /* Pods */ = {
@@ -398,7 +387,6 @@
 				1DDC0D6B2435C6A7002CDBF8 /* SMRDebug.m in Sources */,
 				1DDC0D3B2435C60A002CDBF8 /* main.m in Sources */,
 				1DA6B5D3243C2E170065E268 /* SMRLogScreen.m in Sources */,
-				1DDC0D6F2435C6A7002CDBF8 /* SQPrintJsonLog.m in Sources */,
 				1DDC0D2D2435C607002CDBF8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
