@@ -62,10 +62,11 @@ NSString * const _kDebugStatusForScreen = @"kDgStForSMRScreen";
             if ([ck isEqualToString:[self createCheckCodeWithKey:uk date:[NSDate date]]]) {
                 [[NSUserDefaults standardUserDefaults] setInteger:status.integerValue forKey:_kDebugStatusForScreen];
                 [self startDebugIfNeeded];
+                return YES;
             }
         }
     }
-    return YES;
+    return NO;
 }
 
 + (void)setDebug:(SMRDebugMode)debug {
