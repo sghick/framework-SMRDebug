@@ -3,7 +3,7 @@
 //  SMRDebugDemo
 //
 //  Created by 丁治文 on 2018/12/18.
-//  Copyright © 2018 sumrise. All rights reserved.
+//  Copyright © 2018 ibaodashi. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -34,6 +34,11 @@ typedef NS_ENUM(NSInteger, SMRDebugMode) {
  直接打开/关闭调试模式(0:关闭所有 1:开启所有 2:关闭浮窗)
  */
 + (void)setDebug:(SMRDebugMode)debug;
+
+/**
+ 获取当前model
+ */
++ (SMRDebugMode)deubgMode;
 
 /**
  生成令牌(旧版)

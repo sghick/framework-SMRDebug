@@ -3,10 +3,11 @@
 //  SMRDebugDemo
 //
 //  Created by 丁治文 on 2018/12/18.
-//  Copyright © 2018 sumrise. All rights reserved.
+//  Copyright © 2018 ibaodashi. All rights reserved.
 //
 
 #import "SMRLogSys.h"
+#import "SMRLogItem.h"
 #import "SMRLogScreen.h"
 
 static NSString *const kSMRLogSysDebug = @"kSMRLogSysDebug";
@@ -59,28 +60,24 @@ static bool _staticLogSysDebug = NO;
     }
     
     NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
-    [dateformat setDateFormat:@"yyyyMMdd_HH_mm"];
-    NSString *fileName = [NSString stringWithFormat:@"SMRLog_%@.txt",[dateformat stringFromDate:[NSDate date]]];
+    [dateformat setDateFormat:@"yyyyMMddHHmm"];
+    NSString *fileName = [NSString stringWithFormat:@"%@.txt",[dateformat stringFromDate:[NSDate date]]];
     NSString *logFilePath = [docPath stringByAppendingPathComponent:fileName];
     if (![defaultManager fileExistsAtPath:logFilePath]) {
         [defaultManager createFileAtPath:logFilePath contents:nil attributes:nil];
     }
     
-    // 差值:s
-    NSTimeInterval rar = 0;
-    NSDate *date = [NSDate date];
-    if (_beginTime > 0) {
-        NSTimeInterval dt = [date timeIntervalSince1970];
-        rar = dt - _beginTime;
-    }
-    NSString *logDate = [[self dateFormatter] stringFromDate:date];
-    NSString *content = nil;
-    if (rar == 0) {
-        content = [NSString stringWithFormat:@"%@ %@ %@\n", logDate, fcName, log];
-    } else {
-        content = [NSString stringWithFormat:@"%@ %@ %.4lfs %@\n", logDate, fcName, rar, log];
-    }
-    NSLog(@"%@", content);
+    // 创建logitem
+    NSTimeInterval dt = [[NSDate date] timeIntervalSince1970];
+    SMRLogItem *logitem = [[SMRLogItem alloc] init];
+    logitem.create_time = dt;
+    logitem.rar_time = (_beginTime > 0) ? (dt - _beginTime) : 0;
+    logitem.fcname = fcName;
+    logitem.label = label;
+    logitem.content = log;
+    
+    // 保存至文件
+    NSString *content = [logitem.JSONString stringByAppendingString:@",\n"];
     NSData *buffer = [content dataUsingEncoding:NSUTF8StringEncoding];
     NSFileHandle *outFile = [NSFileHandle fileHandleForWritingAtPath:logFilePath];
     if (!outFile) {
@@ -91,7 +88,8 @@ static bool _staticLogSysDebug = NO;
     [outFile writeData:buffer];
     [outFile closeFile];
     
-    [SMRLogScreen addLine:content linebreak:YES groupLabel:label];
+    // 输出到日志视图
+    [SMRLogScreen addLogItem:logitem];
 }
 
 + (void)outputNSlogToFile {
@@ -105,8 +103,8 @@ static bool _staticLogSysDebug = NO;
     }
     
     NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
-    [dateformat setDateFormat:@"yyyyMMdd_HH_mm"];
-    NSString *fileName = [NSString stringWithFormat:@"NSLog_%@.txt",[dateformat stringFromDate:[NSDate date]]];
+    [dateformat setDateFormat:@"yyyyMMddHHmm"];
+    NSString *fileName = [NSString stringWithFormat:@"%@.txt",[dateformat stringFromDate:[NSDate date]]];
     NSString *logFilePath = [docPath stringByAppendingPathComponent:fileName];
     
     // 先删除已经存在的文件
@@ -122,11 +120,8 @@ static bool _staticLogSysDebug = NO;
 
 static NSTimeInterval _beginTime = 0;
 + (void)setBeginTime {
-    NSDate *date = [NSDate date];
-    _beginTime = [date timeIntervalSince1970];
-    NSString *content = [[self dateFormatter] stringFromDate:date];
-    NSString *log = [NSString stringWithFormat:@"已设置时间起点:%@", content];
-    [self outputSMRLogToFile:log fcName:nil label:nil];
+    _beginTime = [[NSDate date] timeIntervalSince1970];
+    [self outputSMRLogToFile:@"时间轴起点" fcName:@"" label:@"Begin"];
 }
 
 + (void)printFilePath {

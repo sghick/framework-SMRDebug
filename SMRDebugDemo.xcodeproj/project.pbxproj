@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D50A06824F6142A00B36F07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A06724F6142A00B36F07 /* AppDelegate.m */; };
+		1D50A06B24F6142A00B36F07 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A06A24F6142A00B36F07 /* SceneDelegate.m */; };
+		1D50A06E24F6142A00B36F07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A06D24F6142A00B36F07 /* ViewController.m */; };
+		1D50A07124F6142A00B36F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A06F24F6142A00B36F07 /* Main.storyboard */; };
+		1D50A07324F6142C00B36F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A07224F6142C00B36F07 /* Assets.xcassets */; };
+		1D50A07624F6142C00B36F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A07424F6142C00B36F07 /* LaunchScreen.storyboard */; };
+		1D50A07924F6142C00B36F07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A07824F6142C00B36F07 /* main.m */; };
+		1D50A0AD24F6169B00B36F07 /* SMRDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0A724F6169B00B36F07 /* SMRDebug.m */; };
+		1D50A0AE24F6169B00B36F07 /* SMRDebugBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A0A824F6169B00B36F07 /* SMRDebugBundle.bundle */; };
+		1D50A0AF24F6169B00B36F07 /* SMRDebugBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0AA24F6169B00B36F07 /* SMRDebugBundle.m */; };
+		1D50A0DE24F616B800B36F07 /* SMRLogSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0D524F616B800B36F07 /* SMRLogSettings.m */; };
+		1D50A0DF24F616B800B36F07 /* SMRLogSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0D824F616B800B36F07 /* SMRLogSideMenuView.m */; };
+		1D50A0E024F616B800B36F07 /* SMRLogScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0DA24F616B800B36F07 /* SMRLogScreen.m */; };
+		1D50A0E724F616C500B36F07 /* SMRLSMForDokit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0E424F616C500B36F07 /* SMRLSMForDokit.m */; };
+		1D50A0E824F616C500B36F07 /* SMRLSMForFlex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0E524F616C500B36F07 /* SMRLSMForFlex.m */; };
+		1D50A0E924F616C500B36F07 /* SMRLSMForLogOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0E624F616C500B36F07 /* SMRLSMForLogOn.m */; };
+		1D50A0EE24F616D700B36F07 /* SMRLogSys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0EA24F616D700B36F07 /* SMRLogSys.m */; };
+		1D50A0EF24F616D700B36F07 /* SMRLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0ED24F616D700B36F07 /* SMRLogItem.m */; };
+		1D50A0F524F6176E00B36F07 /* SMRMainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0F424F6176E00B36F07 /* SMRMainObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D50A06324F6142A00B36F07 /* SMRDebugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMRDebugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D50A06624F6142A00B36F07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D50A06724F6142A00B36F07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D50A06924F6142A00B36F07 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1D50A06A24F6142A00B36F07 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1D50A06C24F6142A00B36F07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1D50A06D24F6142A00B36F07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1D50A07024F6142A00B36F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D50A07224F6142C00B36F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D50A07524F6142C00B36F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D50A07724F6142C00B36F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D50A07824F6142C00B36F07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D50A0A724F6169B00B36F07 /* SMRDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRDebug.m; sourceTree = "<group>"; };
+		1D50A0A824F6169B00B36F07 /* SMRDebugBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SMRDebugBundle.bundle; sourceTree = "<group>"; };
+		1D50A0A924F6169B00B36F07 /* SMRDebugBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRDebugBundle.h; sourceTree = "<group>"; };
+		1D50A0AA24F6169B00B36F07 /* SMRDebugBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRDebugBundle.m; sourceTree = "<group>"; };
+		1D50A0AB24F6169B00B36F07 /* SMRDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRDebug.h; sourceTree = "<group>"; };
+		1D50A0AC24F6169B00B36F07 /* SMRDebuger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRDebuger.h; sourceTree = "<group>"; };
+		1D50A0D524F616B800B36F07 /* SMRLogSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogSettings.m; sourceTree = "<group>"; };
+		1D50A0D624F616B800B36F07 /* SMRLogScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogScreen.h; sourceTree = "<group>"; };
+		1D50A0D724F616B800B36F07 /* SMRLogSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogSideMenuView.h; sourceTree = "<group>"; };
+		1D50A0D824F616B800B36F07 /* SMRLogSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogSideMenuView.m; sourceTree = "<group>"; };
+		1D50A0D924F616B800B36F07 /* SMRLogSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogSettings.h; sourceTree = "<group>"; };
+		1D50A0DA24F616B800B36F07 /* SMRLogScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogScreen.m; sourceTree = "<group>"; };
+		1D50A0E124F616C500B36F07 /* SMRLSMForLogOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLSMForLogOn.h; sourceTree = "<group>"; };
+		1D50A0E224F616C500B36F07 /* SMRLSMForFlex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLSMForFlex.h; sourceTree = "<group>"; };
+		1D50A0E324F616C500B36F07 /* SMRLSMForDokit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLSMForDokit.h; sourceTree = "<group>"; };
+		1D50A0E424F616C500B36F07 /* SMRLSMForDokit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLSMForDokit.m; sourceTree = "<group>"; };
+		1D50A0E524F616C500B36F07 /* SMRLSMForFlex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLSMForFlex.m; sourceTree = "<group>"; };
+		1D50A0E624F616C500B36F07 /* SMRLSMForLogOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLSMForLogOn.m; sourceTree = "<group>"; };
+		1D50A0EA24F616D700B36F07 /* SMRLogSys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogSys.m; sourceTree = "<group>"; };
+		1D50A0EB24F616D700B36F07 /* SMRLogSys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogSys.h; sourceTree = "<group>"; };
+		1D50A0EC24F616D700B36F07 /* SMRLogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRLogItem.h; sourceTree = "<group>"; };
+		1D50A0ED24F616D700B36F07 /* SMRLogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogItem.m; sourceTree = "<group>"; };
+		1D50A0F324F6176E00B36F07 /* SMRMainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRMainObject.h; sourceTree = "<group>"; };
+		1D50A0F424F6176E00B36F07 /* SMRMainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRMainObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D50A06024F6142A00B36F07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D50A05A24F6142A00B36F07 = {
+			isa = PBXGroup;
+			children = (
+				1D50A07F24F6168200B36F07 /* SMRDebug */,
+				1D50A06524F6142A00B36F07 /* SMRDebugDemo */,
+				1D50A06424F6142A00B36F07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D50A06424F6142A00B36F07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A06324F6142A00B36F07 /* SMRDebugDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D50A06524F6142A00B36F07 /* SMRDebugDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A06624F6142A00B36F07 /* AppDelegate.h */,
+				1D50A06724F6142A00B36F07 /* AppDelegate.m */,
+				1D50A06924F6142A00B36F07 /* SceneDelegate.h */,
+				1D50A06A24F6142A00B36F07 /* SceneDelegate.m */,
+				1D50A0F324F6176E00B36F07 /* SMRMainObject.h */,
+				1D50A0F424F6176E00B36F07 /* SMRMainObject.m */,
+				1D50A06C24F6142A00B36F07 /* ViewController.h */,
+				1D50A06D24F6142A00B36F07 /* ViewController.m */,
+				1D50A06F24F6142A00B36F07 /* Main.storyboard */,
+				1D50A07224F6142C00B36F07 /* Assets.xcassets */,
+				1D50A07424F6142C00B36F07 /* LaunchScreen.storyboard */,
+				1D50A07724F6142C00B36F07 /* Info.plist */,
+				1D50A07824F6142C00B36F07 /* main.m */,
+			);
+			path = SMRDebugDemo;
+			sourceTree = "<group>";
+		};
+		1D50A07F24F6168200B36F07 /* SMRDebug */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A0AC24F6169B00B36F07 /* SMRDebuger.h */,
+				1D50A0AB24F6169B00B36F07 /* SMRDebug.h */,
+				1D50A0A724F6169B00B36F07 /* SMRDebug.m */,
+				1D50A0A824F6169B00B36F07 /* SMRDebugBundle.bundle */,
+				1D50A0A924F6169B00B36F07 /* SMRDebugBundle.h */,
+				1D50A0AA24F6169B00B36F07 /* SMRDebugBundle.m */,
+				1D50A0B024F616AB00B36F07 /* SMRLogScreen */,
+				1D50A0BE24F616AB00B36F07 /* SMRLogSystem */,
+			);
+			path = SMRDebug;
+			sourceTree = "<group>";
+		};
+		1D50A0B024F616AB00B36F07 /* SMRLogScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A0D624F616B800B36F07 /* SMRLogScreen.h */,
+				1D50A0DA24F616B800B36F07 /* SMRLogScreen.m */,
+				1D50A0D924F616B800B36F07 /* SMRLogSettings.h */,
+				1D50A0D524F616B800B36F07 /* SMRLogSettings.m */,
+				1D50A0D724F616B800B36F07 /* SMRLogSideMenuView.h */,
+				1D50A0D824F616B800B36F07 /* SMRLogSideMenuView.m */,
+				1D50A0CE24F616B800B36F07 /* SMRLogScreenMenus */,
+			);
+			path = SMRLogScreen;
+			sourceTree = "<group>";
+		};
+		1D50A0BE24F616AB00B36F07 /* SMRLogSystem */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A0EC24F616D700B36F07 /* SMRLogItem.h */,
+				1D50A0ED24F616D700B36F07 /* SMRLogItem.m */,
+				1D50A0EB24F616D700B36F07 /* SMRLogSys.h */,
+				1D50A0EA24F616D700B36F07 /* SMRLogSys.m */,
+			);
+			path = SMRLogSystem;
+			sourceTree = "<group>";
+		};
+		1D50A0CE24F616B800B36F07 /* SMRLogScreenMenus */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A0E324F616C500B36F07 /* SMRLSMForDokit.h */,
+				1D50A0E424F616C500B36F07 /* SMRLSMForDokit.m */,
+				1D50A0E224F616C500B36F07 /* SMRLSMForFlex.h */,
+				1D50A0E524F616C500B36F07 /* SMRLSMForFlex.m */,
+				1D50A0E124F616C500B36F07 /* SMRLSMForLogOn.h */,
+				1D50A0E624F616C500B36F07 /* SMRLSMForLogOn.m */,
+			);
+			path = SMRLogScreenMenus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D50A06224F6142A00B36F07 /* SMRDebugDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D50A07C24F6142C00B36F07 /* Build configuration list for PBXNativeTarget "SMRDebugDemo" */;
+			buildPhases = (
+				1D50A05F24F6142A00B36F07 /* Sources */,
+				1D50A06024F6142A00B36F07 /* Frameworks */,
+				1D50A06124F6142A00B36F07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMRDebugDemo;
+			productName = SMRDebugDemo;
+			productReference = 1D50A06324F6142A00B36F07 /* SMRDebugDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D50A05B24F6142A00B36F07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Tinswin;
+				TargetAttributes = {
+					1D50A06224F6142A00B36F07 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 1D50A05E24F6142A00B36F07 /* Build configuration list for PBXProject "SMRDebugDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D50A05A24F6142A00B36F07;
+			productRefGroup = 1D50A06424F6142A00B36F07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D50A06224F6142A00B36F07 /* SMRDebugDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D50A06124F6142A00B36F07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D50A0AE24F6169B00B36F07 /* SMRDebugBundle.bundle in Resources */,
+				1D50A07624F6142C00B36F07 /* LaunchScreen.storyboard in Resources */,
+				1D50A07324F6142C00B36F07 /* Assets.xcassets in Resources */,
+				1D50A07124F6142A00B36F07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D50A05F24F6142A00B36F07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D50A0DF24F616B800B36F07 /* SMRLogSideMenuView.m in Sources */,
+				1D50A0F524F6176E00B36F07 /* SMRMainObject.m in Sources */,
+				1D50A0EF24F616D700B36F07 /* SMRLogItem.m in Sources */,
+				1D50A06E24F6142A00B36F07 /* ViewController.m in Sources */,
+				1D50A0E924F616C500B36F07 /* SMRLSMForLogOn.m in Sources */,
+				1D50A0EE24F616D700B36F07 /* SMRLogSys.m in Sources */,
+				1D50A06824F6142A00B36F07 /* AppDelegate.m in Sources */,
+				1D50A0AF24F6169B00B36F07 /* SMRDebugBundle.m in Sources */,
+				1D50A0E024F616B800B36F07 /* SMRLogScreen.m in Sources */,
+				1D50A0AD24F6169B00B36F07 /* SMRDebug.m in Sources */,
+				1D50A0E824F616C500B36F07 /* SMRLSMForFlex.m in Sources */,
+				1D50A0DE24F616B800B36F07 /* SMRLogSettings.m in Sources */,
+				1D50A07924F6142C00B36F07 /* main.m in Sources */,
+				1D50A06B24F6142A00B36F07 /* SceneDelegate.m in Sources */,
+				1D50A0E724F616C500B36F07 /* SMRLSMForDokit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D50A06F24F6142A00B36F07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D50A07024F6142A00B36F07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D50A07424F6142C00B36F07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D50A07524F6142C00B36F07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D50A07A24F6142C00B36F07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D50A07B24F6142C00B36F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D50A07D24F6142C00B36F07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QXHGXQB5D;
+				INFOPLIST_FILE = SMRDebugDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumrise.debug.demo.SMRDebugDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D50A07E24F6142C00B36F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QXHGXQB5D;
+				INFOPLIST_FILE = SMRDebugDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumrise.debug.demo.SMRDebugDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D50A05E24F6142A00B36F07 /* Build configuration list for PBXProject "SMRDebugDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D50A07A24F6142C00B36F07 /* Debug */,
+				1D50A07B24F6142C00B36F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D50A07C24F6142C00B36F07 /* Build configuration list for PBXNativeTarget "SMRDebugDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D50A07D24F6142C00B36F07 /* Debug */,
+				1D50A07E24F6142C00B36F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D50A05B24F6142A00B36F07 /* Project object */;
+}

@@ -3,7 +3,7 @@
 //  SMRDebugDemo
 //
 //  Created by 丁治文 on 2018/12/18.
-//  Copyright © 2018 sumrise. All rights reserved.
+//  Copyright © 2018 ibaodashi. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,6 +11,7 @@
 #define SMRFunctionName          (SMRToString(@"%s", __PRETTY_FUNCTION__))
 #define SMRToString(a...)        ([NSString stringWithFormat:a])
 
+#define SMRLogBegin() ([SMRLogSys setBeginTime])
 #define SMRLog0(desc, lbl) \
 ({if ([SMRLogSys debug]) {[SMRLogSys outputSMRLogToFile:SMRToString(desc) fcName:SMRFunctionName label:lbl];}})
 #define SMRLog1(desc, arg1, lbl) \

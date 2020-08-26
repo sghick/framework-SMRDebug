@@ -3,7 +3,7 @@
 //  SMRDebugDemo
 //
 //  Created by 丁治文 on 2018/12/18.
-//  Copyright © 2018 sumrise. All rights reserved.
+//  Copyright © 2018 ibaodashi. All rights reserved.
 //
 
 #import "SMRDebug.h"
@@ -16,13 +16,12 @@
 NSString * const _kDebugStatusForScreen = @"kDgStForSMRScreen";
 
 + (void)startDebugIfNeeded {
-    SMRDebugMode status = [[NSUserDefaults standardUserDefaults] integerForKey:_kDebugStatusForScreen];
+    SMRDebugMode status = [self deubgMode];
     switch (status) {
         case SMRDebugModeNone: {
             [SMRLogScreen sharedScreen].enableOnlyWhenShow = NO;
             [SMRLogScreen hide];
             [SMRLogSys setDebug:NO];
-            [[FLEXManager sharedManager] hideExplorer];
             [[FLEXManager sharedManager] setNetworkDebuggingEnabled:NO];
         }
             break;
@@ -30,13 +29,11 @@ NSString * const _kDebugStatusForScreen = @"kDgStForSMRScreen";
             [SMRLogScreen sharedScreen].enableOnlyWhenShow = NO;
             [SMRLogScreen show];
             [SMRLogSys setDebug:YES];
-            [[FLEXManager sharedManager] showExplorer];
             [[FLEXManager sharedManager] setNetworkDebuggingEnabled:YES];
         }
             break;
         case SMRDebugModeBackgoround: {
             [SMRLogScreen hide];
-            [[FLEXManager sharedManager] hideExplorer];
         }
             break;
         default:
@@ -72,6 +69,11 @@ NSString * const _kDebugStatusForScreen = @"kDgStForSMRScreen";
 + (void)setDebug:(SMRDebugMode)debug {
     [[NSUserDefaults standardUserDefaults] setInteger:debug forKey:_kDebugStatusForScreen];
     [self startDebugIfNeeded];
+}
+
++ (SMRDebugMode)deubgMode {
+    SMRDebugMode status = [[NSUserDefaults standardUserDefaults] integerForKey:_kDebugStatusForScreen];
+    return status;
 }
 
 + (NSDictionary *)p_debug_parseredParamsWithURL:(NSURL *)url {

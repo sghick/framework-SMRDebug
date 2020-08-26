@@ -3,10 +3,11 @@
 //  SMRDebugDemo
 //
 //  Created by 丁治文 on 2018/12/18.
-//  Copyright © 2018 sumrise. All rights reserved.
+//  Copyright © 2018 ibaodashi. All rights reserved.
 //
 
 #import "SMRLogSideMenuView.h"
+#import "SMRDebugBundle.h"
 
 @interface SMRLogSideMenuView () <
 UITableViewDelegate,
@@ -14,11 +15,13 @@ UITableViewDataSource >
 
 @property (nonatomic, strong) UIView *parentView;
 @property (nonatomic, strong) UIView *contentView;
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIImageView *trangleView;
 
 @end
 
 @implementation SMRLogSideMenuView
+
+@synthesize tableView = _tableView;
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (CGRectEqualToRect(frame, CGRectZero)) {
@@ -36,6 +39,7 @@ UITableViewDataSource >
     _maxHeightOfContent = self.bounds.size.height;
     
     [self addSubview:self.contentView];
+    [self.contentView addSubview:self.trangleView];
     [self.contentView addSubview:self.tableView];
 }
 
@@ -46,12 +50,12 @@ UITableViewDataSource >
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat itemHeight = 0;
-    if ([self.delegate respondsToSelector:@selector(sideMenuView:heightOfItem:atIndex:)]) {
-        UIView *view = self.menuItems[indexPath.row];
-        itemHeight = [self.delegate sideMenuView:self heightOfItem:view atIndex:indexPath.row];
-        view.frame = CGRectMake(0, 0, self.menuWidth, itemHeight);
+    CGFloat itemHeight = 44;
+    UIView *view = self.menuItems[indexPath.row];
+    if (self.itemHeightBlock) {
+        itemHeight = self.itemHeightBlock(self, view, indexPath.row);
     }
+    view.frame = CGRectMake(0, 0, self.menuWidth, itemHeight);
     return itemHeight;
 }
 
@@ -66,9 +70,9 @@ UITableViewDataSource >
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(sideMenuView:didTouchedItem:atIndex:)]) {
+    if (self.menuTouchedBlock) {
         UIView *view = self.menuItems[indexPath.row];
-        [self.delegate sideMenuView:self didTouchedItem:view atIndex:indexPath.row];
+        self.menuTouchedBlock(self, view, indexPath.row);
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -96,8 +100,8 @@ UITableViewDataSource >
 }
 
 - (void)hide {
-    if ([self.delegate respondsToSelector:@selector(sideMenuViewWillDismiss:)]) {
-        [self.delegate sideMenuViewWillDismiss:self];
+    if (self.menuWillDismissBlock) {
+        self.menuWillDismissBlock(self);
     }
     [self hideAnimations];
 }
@@ -126,22 +130,106 @@ UITableViewDataSource >
     }];
 }
 
+#pragma mark - Style - Trangle
+
+- (CGSize)trangleSize {
+    switch (self.trangleStyle) {
+        case SMRLogSideMenuTrangleStyleUp:
+        case SMRLogSideMenuTrangleStyleDown: {
+            return CGSizeMake(14, 10);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleLeft:
+        case SMRLogSideMenuTrangleStyleRight: {
+            return CGSizeMake(10, 14);
+        }
+            break;
+        default:
+            break;
+    }
+    return CGSizeZero;
+}
+
+- (CGAffineTransform)trangleTransform {
+    switch (self.trangleStyle) {
+        case SMRLogSideMenuTrangleStyleUp: {
+            return CGAffineTransformMakeRotation(0);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleDown: {
+            return CGAffineTransformMakeRotation(M_PI);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleLeft: {
+            return CGAffineTransformMakeRotation(-M_PI_2);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleRight: {
+            return CGAffineTransformMakeRotation(M_PI_2);
+        }
+            break;
+        default:
+            break;
+    }
+    return CGAffineTransformMakeRotation(0);
+}
+
+- (CGPoint)trangleOffsetForReal:(CGSize)tbsize tsize:(CGSize)tsize {
+    BOOL reverse = self.trangleOffsetReverse;
+    CGPoint offset = self.trangleOffset;
+    switch (self.trangleStyle) {
+        case SMRLogSideMenuTrangleStyleUp: {
+            return CGPointMake((reverse ? (tbsize.width - tsize.width - offset.x) : offset.x),
+                               offset.y - tsize.height);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleDown: {
+            return CGPointMake((reverse ? (tbsize.width - tsize.width - offset.x) : offset.x),
+                               offset.y + tbsize.height);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleLeft: {
+            return CGPointMake(offset.x - tsize.width,
+                               reverse ? (tbsize.height - tsize.height - offset.y) : offset.y);
+        }
+            break;
+        case SMRLogSideMenuTrangleStyleRight: {
+            return CGPointMake(offset.x + tbsize.width,
+                               reverse ? (tbsize.height - tsize.height - offset.y) : offset.y);
+        }
+            break;
+        default:
+            break;
+    }
+    return CGPointZero;
+}
+
 #pragma mark - Setters
 
 - (void)loadMenuWithItems:(NSArray<UIView *> *)menuItems menuWidth:(CGFloat)menuWidth origin:(CGPoint)origin {
     _menuItems = menuItems;
     _menuWidth = menuWidth;
-    
-    if ([self.delegate respondsToSelector:@selector(sideMenuView:heightOfItem:atIndex:)]) {
+
+    CGFloat height = 44*menuItems.count;
+    if (self.itemHeightBlock) {
         NSInteger index = 0;
-        CGFloat height = 0;
+        height = 0;
         for (UIView *view in menuItems) {
-            height += [self.delegate sideMenuView:self heightOfItem:view atIndex:index];
+            height += self.itemHeightBlock(self, view, index);
             index++;
         }
-        self.contentView.frame = CGRectMake(origin.x, origin.y, menuWidth, height);
-        self.tableView.frame = CGRectMake(0, 0, menuWidth, MIN(height, self.maxHeightOfContent));
     }
+    CGFloat tbh = MAX(self.minHeightOfContent, MIN(height, self.maxHeightOfContent));
+    // 计算content
+    self.contentView.frame = CGRectMake(origin.x, origin.y, menuWidth, height);
+    self.tableView.frame = CGRectMake(0, 0, menuWidth, tbh);
+    
+    // 计算trangle
+    CGSize tsize = [self trangleSize];
+    CGAffineTransform ttransform = [self trangleTransform];
+    CGPoint toffset = [self trangleOffsetForReal:CGSizeMake(menuWidth, self.tableView.frame.size.height) tsize:tsize];
+    self.trangleView.transform = ttransform;
+    self.trangleView.frame = CGRectMake(toffset.x, toffset.y, tsize.width, tsize.height);
     
     [self.tableView reloadData];
 }
@@ -171,6 +259,15 @@ UITableViewDataSource >
     return _contentView;
 }
 
+- (UIImageView *)trangleView {
+    if (!_trangleView) {
+        UIImageView *view = [[UIImageView alloc] init];
+        view.image = [SMRDebugBundle imageNamed:@"menu_alert_trangle@3x"];
+        _trangleView = view;
+    }
+    return _trangleView;
+}
+
 - (UITableView *)tableView {
     if (_tableView == nil) {
         UITableView *tableView = [[UITableView alloc] init];
@@ -188,14 +285,14 @@ UITableViewDataSource >
 
 + (NSArray<UIView *> *)menuItemsWithTitles:(NSArray<NSString *> *)titles {
     NSMutableArray *items = [NSMutableArray array];
-    [titles enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    for (NSString *obj in titles) {
         UILabel *label = [[UILabel alloc] init];
-        label.font = [UIFont systemFontOfSize:12];
+        label.font = [UIFont systemFontOfSize:13];
         label.textColor = [UIColor blackColor];
-        label.text = [@"    " stringByAppendingString:obj];
+        label.text = [@"     " stringByAppendingString:obj];
         
         [items addObject:label];
-    }];
+    }
     return items;
 }
 
