@@ -1,0 +1,154 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
+  - DoraemonKit/Core (3.0.2)
+  - DoraemonKit/WithDatabase (3.0.2):
+    - DoraemonKit/Core
+    - YYDebugDatabase
+  - DoraemonKit/WithGPS (3.0.2):
+    - DoraemonKit/Core
+  - DoraemonKit/WithLoad (3.0.2):
+    - DoraemonKit/Core
+  - DoraemonKit/WithLogger (3.0.2):
+    - CocoaLumberjack
+    - DoraemonKit/Core
+  - DoraemonKit/WithMLeaksFinder (3.0.2):
+    - DoraemonKit/Core
+  - FLEX (4.1.1)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - IQKeyboardManager (6.5.6)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - PureLayout (3.1.4)
+  - SDWebImage (5.7.0):
+    - SDWebImage/Core (= 5.7.0)
+  - SDWebImage/Core (5.7.0)
+  - SMRBaseCore (1.0.0):
+    - SMRBaseCore/SMRCommon (= 1.0.0)
+    - SMRBaseCore/SMRConfigs (= 1.0.0)
+    - SMRBaseCore/SMRCoreKit (= 1.0.0)
+    - SMRBaseCore/SMRUIKit (= 1.0.0)
+  - SMRBaseCore/SMRCommon (1.0.0):
+    - SMRBaseCore/SMRCommon/Foundation (= 1.0.0)
+    - SMRBaseCore/SMRCommon/UIKit (= 1.0.0)
+  - SMRBaseCore/SMRCommon/Foundation (1.0.0)
+  - SMRBaseCore/SMRCommon/UIKit (1.0.0)
+  - SMRBaseCore/SMRConfigs (1.0.0):
+    - SMRBaseCore/SMRCommon
+    - SMRBaseCore/SMRCoreKit
+    - SMRBaseCore/SMRUIKit
+  - SMRBaseCore/SMRCoreKit (1.0.0):
+    - AFNetworking (= 4.0.1)
+    - FMDB (= 2.7.2)
+    - SMRBaseCore/SMRCommon
+    - YYCache (= 1.0.4)
+    - YYModel (= 1.0.4)
+  - SMRBaseCore/SMRUIKit (1.0.0):
+    - IQKeyboardManager (~> 6.5.6)
+    - MBProgressHUD (= 1.1.0)
+    - MJRefresh (= 3.1.15.7)
+    - PureLayout (= 3.1.4)
+    - SDWebImage (= 5.7.0)
+    - SMRBaseCore/SMRCommon
+    - SMRBaseCore/SMRCoreKit
+    - YBImageBrowser (= 3.0.6)
+    - YYText (= 1.0.7)
+  - YBImageBrowser (3.0.6):
+    - YBImageBrowser/Core (= 3.0.6)
+  - YBImageBrowser/Core (3.0.6):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YYCache (1.0.4)
+  - YYDebugDatabase (2.0.9):
+    - FMDB
+    - GCDWebServer
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - DoraemonKit/Core
+  - DoraemonKit/WithDatabase
+  - DoraemonKit/WithGPS
+  - DoraemonKit/WithLoad
+  - DoraemonKit/WithLogger
+  - DoraemonKit/WithMLeaksFinder
+  - FLEX
+  - "SMRBaseCore (from `git@github.com:sghick/framework-SMRBaseCore.git`, branch `release-1.0.0`)"
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CocoaLumberjack
+    - DoraemonKit
+    - FLEX
+    - FMDB
+    - GCDWebServer
+    - IQKeyboardManager
+    - MBProgressHUD
+    - MJRefresh
+    - PureLayout
+    - SDWebImage
+    - YBImageBrowser
+    - YYCache
+    - YYDebugDatabase
+    - YYImage
+    - YYModel
+    - YYText
+
+EXTERNAL SOURCES:
+  SMRBaseCore:
+    :branch: release-1.0.0
+    :git: "git@github.com:sghick/framework-SMRBaseCore.git"
+
+CHECKOUT OPTIONS:
+  SMRBaseCore:
+    :commit: f542dc68ed85e5bcd632fd99748d2e0cb6ab465a
+    :git: "git@github.com:sghick/framework-SMRBaseCore.git"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  DoraemonKit: 8587e7a9aae0773dfc96707d2369d89d2a21b3d2
+  FLEX: 81096107977a09836eb440173010ceeef01105d6
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  SDWebImage: a99471f452bdfa0ca52ddf5b1adf2b61cab1d1eb
+  SMRBaseCore: f28cc4a7bd2e4523439ffcbc14edadbc3c7ae0da
+  YBImageBrowser: 59d3e8e035351a9f2f89760742628329378a634b
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYDebugDatabase: e9e1d2a92c32b29c8a2777e3a49d34f8133efae0
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 4b3e9a9aff53813ee03099e87599cfff99154340
+
+COCOAPODS: 1.9.1

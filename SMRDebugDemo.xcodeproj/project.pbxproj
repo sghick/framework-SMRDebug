@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1D50A06824F6142A00B36F07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A06724F6142A00B36F07 /* AppDelegate.m */; };
 		1D50A06B24F6142A00B36F07 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A06A24F6142A00B36F07 /* SceneDelegate.m */; };
-		1D50A06E24F6142A00B36F07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A06D24F6142A00B36F07 /* ViewController.m */; };
 		1D50A07124F6142A00B36F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A06F24F6142A00B36F07 /* Main.storyboard */; };
 		1D50A07324F6142C00B36F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A07224F6142C00B36F07 /* Assets.xcassets */; };
 		1D50A07624F6142C00B36F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D50A07424F6142C00B36F07 /* LaunchScreen.storyboard */; };
@@ -26,16 +25,20 @@
 		1D50A0EE24F616D700B36F07 /* SMRLogSys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0EA24F616D700B36F07 /* SMRLogSys.m */; };
 		1D50A0EF24F616D700B36F07 /* SMRLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0ED24F616D700B36F07 /* SMRLogItem.m */; };
 		1D50A0F524F6176E00B36F07 /* SMRMainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A0F424F6176E00B36F07 /* SMRMainObject.m */; };
+		1D50A40B24F64F3700B36F07 /* SMRMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A40024F64F3700B36F07 /* SMRMainController.m */; };
+		1D50A40C24F64F3700B36F07 /* SMRHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A40124F64F3700B36F07 /* SMRHistoryController.m */; };
+		1D50A40D24F64F3700B36F07 /* SMRQRScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A40224F64F3700B36F07 /* SMRQRScanController.m */; };
+		1D50A40E24F64F3700B36F07 /* SMRHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A40924F64F3700B36F07 /* SMRHistoryCell.m */; };
+		1D50A40F24F64F3700B36F07 /* SMRHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50A40A24F64F3700B36F07 /* SMRHistory.m */; };
+		41492D6C3372C8FAD38F8206 /* Pods_SMRDebugDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB89B91F05AEBC815140D219 /* Pods_SMRDebugDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D50A06324F6142A00B36F07 /* SMRDebugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMRDebugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D50A06324F6142A00B36F07 /* Debuger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debuger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D50A06624F6142A00B36F07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D50A06724F6142A00B36F07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D50A06924F6142A00B36F07 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		1D50A06A24F6142A00B36F07 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		1D50A06C24F6142A00B36F07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D50A06D24F6142A00B36F07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1D50A07024F6142A00B36F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D50A07224F6142C00B36F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D50A07524F6142C00B36F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +68,20 @@
 		1D50A0ED24F616D700B36F07 /* SMRLogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRLogItem.m; sourceTree = "<group>"; };
 		1D50A0F324F6176E00B36F07 /* SMRMainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRMainObject.h; sourceTree = "<group>"; };
 		1D50A0F424F6176E00B36F07 /* SMRMainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRMainObject.m; sourceTree = "<group>"; };
+		1D50A3FE24F64F3700B36F07 /* SMREnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMREnums.h; sourceTree = "<group>"; };
+		1D50A40024F64F3700B36F07 /* SMRMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRMainController.m; sourceTree = "<group>"; };
+		1D50A40124F64F3700B36F07 /* SMRHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRHistoryController.m; sourceTree = "<group>"; };
+		1D50A40224F64F3700B36F07 /* SMRQRScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRQRScanController.m; sourceTree = "<group>"; };
+		1D50A40324F64F3700B36F07 /* SMRMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRMainController.h; sourceTree = "<group>"; };
+		1D50A40424F64F3700B36F07 /* SMRHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRHistoryController.h; sourceTree = "<group>"; };
+		1D50A40524F64F3700B36F07 /* SMRQRScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRQRScanController.h; sourceTree = "<group>"; };
+		1D50A40724F64F3700B36F07 /* SMRHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRHistory.h; sourceTree = "<group>"; };
+		1D50A40824F64F3700B36F07 /* SMRHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRHistoryCell.h; sourceTree = "<group>"; };
+		1D50A40924F64F3700B36F07 /* SMRHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRHistoryCell.m; sourceTree = "<group>"; };
+		1D50A40A24F64F3700B36F07 /* SMRHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRHistory.m; sourceTree = "<group>"; };
+		5C95B44C9C8BF74754A482D9 /* Pods-SMRDebugDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMRDebugDemo.debug.xcconfig"; path = "Target Support Files/Pods-SMRDebugDemo/Pods-SMRDebugDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D67B607631FB909C4F69B4AE /* Pods-SMRDebugDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMRDebugDemo.release.xcconfig"; path = "Target Support Files/Pods-SMRDebugDemo/Pods-SMRDebugDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB89B91F05AEBC815140D219 /* Pods_SMRDebugDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMRDebugDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41492D6C3372C8FAD38F8206 /* Pods_SMRDebugDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,13 +102,15 @@
 				1D50A07F24F6168200B36F07 /* SMRDebug */,
 				1D50A06524F6142A00B36F07 /* SMRDebugDemo */,
 				1D50A06424F6142A00B36F07 /* Products */,
+				EB60D29631C411D5924E9385 /* Pods */,
+				E04AD1AC29AB16B1A76865CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		1D50A06424F6142A00B36F07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D50A06324F6142A00B36F07 /* SMRDebugDemo.app */,
+				1D50A06324F6142A00B36F07 /* Debuger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,8 +124,7 @@
 				1D50A06A24F6142A00B36F07 /* SceneDelegate.m */,
 				1D50A0F324F6176E00B36F07 /* SMRMainObject.h */,
 				1D50A0F424F6176E00B36F07 /* SMRMainObject.m */,
-				1D50A06C24F6142A00B36F07 /* ViewController.h */,
-				1D50A06D24F6142A00B36F07 /* ViewController.m */,
+				1D50A3FC24F64F3700B36F07 /* Main */,
 				1D50A06F24F6142A00B36F07 /* Main.storyboard */,
 				1D50A07224F6142C00B36F07 /* Assets.xcassets */,
 				1D50A07424F6142C00B36F07 /* LaunchScreen.storyboard */,
@@ -168,6 +187,65 @@
 			path = SMRLogScreenMenus;
 			sourceTree = "<group>";
 		};
+		1D50A3FC24F64F3700B36F07 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A3FF24F64F3700B36F07 /* Controllers */,
+				1D50A3FD24F64F3700B36F07 /* Objects */,
+				1D50A40624F64F3700B36F07 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1D50A3FD24F64F3700B36F07 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A3FE24F64F3700B36F07 /* SMREnums.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		1D50A3FF24F64F3700B36F07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A40424F64F3700B36F07 /* SMRHistoryController.h */,
+				1D50A40124F64F3700B36F07 /* SMRHistoryController.m */,
+				1D50A40324F64F3700B36F07 /* SMRMainController.h */,
+				1D50A40024F64F3700B36F07 /* SMRMainController.m */,
+				1D50A40524F64F3700B36F07 /* SMRQRScanController.h */,
+				1D50A40224F64F3700B36F07 /* SMRQRScanController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D50A40624F64F3700B36F07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D50A40724F64F3700B36F07 /* SMRHistory.h */,
+				1D50A40A24F64F3700B36F07 /* SMRHistory.m */,
+				1D50A40824F64F3700B36F07 /* SMRHistoryCell.h */,
+				1D50A40924F64F3700B36F07 /* SMRHistoryCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E04AD1AC29AB16B1A76865CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB89B91F05AEBC815140D219 /* Pods_SMRDebugDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB60D29631C411D5924E9385 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C95B44C9C8BF74754A482D9 /* Pods-SMRDebugDemo.debug.xcconfig */,
+				D67B607631FB909C4F69B4AE /* Pods-SMRDebugDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D50A07C24F6142C00B36F07 /* Build configuration list for PBXNativeTarget "SMRDebugDemo" */;
 			buildPhases = (
+				9B1004A0018515E5B0F6CCC7 /* [CP] Check Pods Manifest.lock */,
 				1D50A05F24F6142A00B36F07 /* Sources */,
 				1D50A06024F6142A00B36F07 /* Frameworks */,
 				1D50A06124F6142A00B36F07 /* Resources */,
+				88928DC9CB50E4BF69A1641D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,7 +265,7 @@
 			);
 			name = SMRDebugDemo;
 			productName = SMRDebugDemo;
-			productReference = 1D50A06324F6142A00B36F07 /* SMRDebugDemo.app */;
+			productReference = 1D50A06324F6142A00B36F07 /* Debuger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -234,6 +314,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88928DC9CB50E4BF69A1641D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMRDebugDemo/Pods-SMRDebugDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SMRDebugDemo/Pods-SMRDebugDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SMRDebugDemo/Pods-SMRDebugDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B1004A0018515E5B0F6CCC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMRDebugDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D50A05F24F6142A00B36F07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,12 +364,16 @@
 				1D50A0DF24F616B800B36F07 /* SMRLogSideMenuView.m in Sources */,
 				1D50A0F524F6176E00B36F07 /* SMRMainObject.m in Sources */,
 				1D50A0EF24F616D700B36F07 /* SMRLogItem.m in Sources */,
-				1D50A06E24F6142A00B36F07 /* ViewController.m in Sources */,
 				1D50A0E924F616C500B36F07 /* SMRLSMForLogOn.m in Sources */,
 				1D50A0EE24F616D700B36F07 /* SMRLogSys.m in Sources */,
 				1D50A06824F6142A00B36F07 /* AppDelegate.m in Sources */,
 				1D50A0AF24F6169B00B36F07 /* SMRDebugBundle.m in Sources */,
+				1D50A40D24F64F3700B36F07 /* SMRQRScanController.m in Sources */,
+				1D50A40C24F64F3700B36F07 /* SMRHistoryController.m in Sources */,
 				1D50A0E024F616B800B36F07 /* SMRLogScreen.m in Sources */,
+				1D50A40F24F64F3700B36F07 /* SMRHistory.m in Sources */,
+				1D50A40E24F64F3700B36F07 /* SMRHistoryCell.m in Sources */,
+				1D50A40B24F64F3700B36F07 /* SMRMainController.m in Sources */,
 				1D50A0AD24F6169B00B36F07 /* SMRDebug.m in Sources */,
 				1D50A0E824F616C500B36F07 /* SMRLSMForFlex.m in Sources */,
 				1D50A0DE24F616B800B36F07 /* SMRLogSettings.m in Sources */,
@@ -329,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -381,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -391,34 +517,40 @@
 		};
 		1D50A07D24F6142C00B36F07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C95B44C9C8BF74754A482D9 /* Pods-SMRDebugDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 8QXHGXQB5D;
 				INFOPLIST_FILE = SMRDebugDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumrise.debug.demo.SMRDebugDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Debuger;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1D50A07E24F6142C00B36F07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67B607631FB909C4F69B4AE /* Pods-SMRDebugDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 8QXHGXQB5D;
 				INFOPLIST_FILE = SMRDebugDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumrise.debug.demo.SMRDebugDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Debuger;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
